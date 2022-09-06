@@ -15,21 +15,24 @@ while T:
     if a == 1:
         print(1)
     elif a == 2:
-        print(x_2[((b%10)%len(x_2))-1])
+        print(x_2[(b%4)-1])
     elif a == 3:
-        print(x_3[((b%10)%len(x_3))-1])
+        print(x_3[(b%4)-1])
     elif a == 4:
-        print(x_4[((b%10)%len(x_4))-1])
+        print(x_4[(b%2)-1])
     elif a == 5:
         print(5)
     elif a == 6:
         print(6)
     elif a == 7:
-        print(x_7[((b%10)%len(x_7))-1])
+        print(x_7[(b%4)-1])
     elif a == 8:
-        print(x_8[((b%10)%len(x_8))-1])
+        print(x_8[(b%4)-1])
     elif a == 9:
-        print(x_9[((b%10)%len(x_9))-1])
+        print(x_9[(b%2)-1])
     elif a == 0:
         print(10)
     T -= 1
+    
+    # 단순히 제곱을 계산하면 큰수가 입력되었을때 시간 초과가 일어난다.
+    # 필요한 것은 1의 자리수이므로 반복되는 구간을 찾아 계산한다.
