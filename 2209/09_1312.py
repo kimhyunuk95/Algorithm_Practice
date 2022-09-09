@@ -1,9 +1,7 @@
 A, B, N = map(int,input().split())
-answer = []
 for i in range(N):
     A = A - (B*(A//B))
     A *= 10
-answer.append(A%B)
 print(A//B)
 
 
