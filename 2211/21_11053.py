@@ -1,0 +1,12 @@
+n = int(input())
+arr = list(map(int,input().split()))
+dp = [0 for _ in range(n)]
+for i in range(n):
+    for j in range(i):
+        if arr[i] > arr[j] and dp[i] < dp[j]:
+            dp[i] = dp[j]
+    dp[i]+= 1
+print(max(dp))
+
+# dp를 사용해 푸는 문제
+# 전의 숫자와 비교해서 크다면 dp숫자를 +1 해준다.
