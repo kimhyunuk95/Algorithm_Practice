@@ -14,4 +14,4 @@ for i in range(n):
     a, b = map(int,input().split())
     print(LCM(a,b))
 
-# 유클리드 호제법을 이용한다.
+# 유클리드 호제법을 이용한다
