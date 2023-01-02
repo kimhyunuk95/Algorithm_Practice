@@ -31,3 +31,5 @@ cnt.sort()
 print(len(cnt))
 for i in range(len(cnt)):
     print(cnt[i])
+
+# bfs를 이용해 숫자를 늘려준다
