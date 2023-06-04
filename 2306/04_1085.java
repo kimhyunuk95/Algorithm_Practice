@@ -4,14 +4,8 @@ public class test {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        int x;
-        int y;
-        int w;
-        int h;
-        int num1;
-        int num2;
-        int num3;
-        int num4;
+        int x, y, w, h;
+        int num1, num2, num3, num4;
         x = sc.nextInt();
         y = sc.nextInt();
         w = sc.nextInt();
